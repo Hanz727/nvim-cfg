@@ -1,0 +1,17 @@
+Download https://www.msys2.org/
+
+C compiler:
+
+Open MSYS2 UCRT64
+Run: 
+pacman -Syu
+pacman -S mingw-w64-ucrt-x86_64-gcc
+Add C:\msys64\ucrt64\bin to PATH
+
+pyright:
+npm install -g pyright
+
+clangd:
+in powershell run:
+winget install -e --id LLVM.LLVM
+Add C:\Program Files\LLVM\bin to PATH
