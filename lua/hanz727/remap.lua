@@ -18,6 +18,9 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("n", "Q", "<nop>")
 
+vim.keymap.set("i", "<C-c>", "<ESC>")
+vim.keymap.set("t", "<ESC>", "<C-\\><C-n>")
+
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 vim.keymap.set('n', '<C-w>', '<C-\\><C-n><C-w>')

@@ -21,7 +21,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(event)
     local opts = {buffer = event.buf}
 
-    -- vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>', opts)
+    vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>', opts)
     vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', opts)
     vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<cr>', opts)
     vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<cr>', opts)
@@ -47,6 +47,15 @@ lspconfig.pyright.setup({
     }
   }
 }) -- Python
+
+-- lspconfig.arduino_language_server.setup({
+--   cmd = {
+--     "arduino-language-server",
+--     "-cli-config", "C:/Users/rocks/AppData/Local/Arduino15/arduino-cli.yaml", -- Adjust this path
+--     "-fqbn", "arduino:avr:mega" -- Change to your board
+--   },
+--   filetypes = {"ino", "arduino"}
+-- })
 
 local cmp = require('cmp')
 
