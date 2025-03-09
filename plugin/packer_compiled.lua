@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "C:\\Users\\rocks\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\share\\lua\\5.1\\?.lua;C:\\Users\\rocks\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\rocks\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\rocks\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
-local install_cpath_pattern = "C:\\Users\\rocks\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\lua\\5.1\\?.so"
+local package_path_str = "/home/hanz/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?.lua;/home/hanz/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?/init.lua;/home/hanz/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?.lua;/home/hanz/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/hanz/.cache/nvim/packer_hererocks/2.1.1703358377/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,63 +76,63 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "C:\\Users\\rocks\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
+    path = "/home/hanz/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   harpoon = {
     loaded = true,
-    path = "C:\\Users\\rocks\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
+    path = "/home/hanz/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "C:\\Users\\rocks\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
+    path = "/home/hanz/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "C:\\Users\\rocks\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
+    path = "/home/hanz/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "C:\\Users\\rocks\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
+    path = "/home/hanz/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\rocks\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
+    path = "/home/hanz/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   playground = {
     loaded = true,
-    path = "C:\\Users\\rocks\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\playground",
+    path = "/home/hanz/.local/share/nvim/site/pack/packer/start/playground",
     url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\rocks\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
+    path = "/home/hanz/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\rocks\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
+    path = "/home/hanz/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   undotree = {
     loaded = true,
-    path = "C:\\Users\\rocks\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\undotree",
+    path = "/home/hanz/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "C:\\Users\\rocks\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
+    path = "/home/hanz/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
   vscode = {
     config = { "\27LJ\2\n6\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\23colorscheme vscode\bcmd\bvim\0" },
     loaded = true,
-    path = "C:\\Users\\rocks\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vscode",
+    path = "/home/hanz/.local/share/nvim/site/pack/packer/start/vscode",
     url = "https://github.com/Mofiqul/vscode.nvim"
   }
 }

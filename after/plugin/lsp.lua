@@ -5,6 +5,18 @@
 -- Reserve a space in the gutter
 vim.opt.signcolumn = 'yes'
 
+
+-- Enable virtual text for diagnostics
+vim.diagnostic.config({
+  virtual_text = { 
+    prefix = '●',  -- You can change this symbol
+    spacing = 2,
+  },
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+})
+
 -- Add cmp_nvim_lsp capabilities settings to lspconfig
 -- This should be executed before you configure any language server
 local lspconfig_defaults = require('lspconfig').util.default_config
