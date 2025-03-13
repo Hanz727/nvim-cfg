@@ -26,3 +26,8 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 vim.keymap.set('n', '<C-w>', '<C-\\><C-n><C-w>')
 vim.keymap.set('t', '<C-w>', '<C-\\><C-n><C-w>')
+
+vim.api.nvim_create_autocmd("BufEnter", {
+    pattern = "*",
+    command = "set formatoptions-=o"
+})
