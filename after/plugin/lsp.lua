@@ -49,7 +49,11 @@ vim.api.nvim_create_autocmd('LspAttach', {
 local lspconfig = require('lspconfig') 
 -- You'll find a list of language servers here:
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
-lspconfig.clangd.setup({})  -- C/C++
+
+lspconfig.clangd.setup({
+    cmd = { "clangd", "--background-index", "--clang-tidy"},
+})  -- C/C++
+
 lspconfig.pyright.setup({
   settings = {
     python = {
